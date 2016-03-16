@@ -63,8 +63,10 @@ namespace PhotoFilter.WPF
             base.OnClosed(e);
         }
 
+        
         private void UpdateImageFromParent()
         {
+            /*Please uncomment and proceed to the next task
             try
             {
                 ImageItem item = _parentList.SelectedItem as ImageItem;
@@ -81,11 +83,11 @@ namespace PhotoFilter.WPF
             catch (Exception)
             {
             }
+            */
         }
 
 
-
-        void _parentList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+            void _parentList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             UpdateImageFromParent();
         }

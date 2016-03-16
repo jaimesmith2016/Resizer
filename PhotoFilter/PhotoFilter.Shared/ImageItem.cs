@@ -62,6 +62,7 @@ namespace PhotoFilter
             }
         }
 
+       
         public BitmapImage Photo
         {
             get
@@ -74,21 +75,20 @@ namespace PhotoFilter
                 return m_photo;
             }
         }
-
+        
+        
         public ImageItem(StorageFile file)
         {
+            /* Please uncomment and move on to the next task
             this.m_file = file;
             this.Name = file.Name;
             this.Path = file.Path;
-            //this.Folder = folder;
+            this.Folder = folder;
+            */
         }
 
-        public async Task LoadImageFromDisk()
-        {
-            m_thumbNail = await m_file.GetThumbnailAsync(ThumbnailMode.PicturesView);
-            m_photo = new BitmapImage();
-            m_photo.SetSource(m_thumbNail);
-        }
+
+
 
         public async Task FetchPictureOnBgThread()
         {
@@ -99,6 +99,17 @@ namespace PhotoFilter
         {
             return await BitmapCache.Instance.GetBitmapAsync(m_file);
         }
+
+        
+        public async Task LoadImageFromDisk()
+        {
+            /* Please uncomment and move on to the next task
+            m_thumbNail = await m_file.GetThumbnailAsync(ThumbnailMode.PicturesView);
+            m_photo = new BitmapImage();
+            m_photo.SetSource(m_thumbNail);
+            */
+        }
+        
 
         public async Task<byte[]> GetScaledPixelsAsync(int height, int width)
         {

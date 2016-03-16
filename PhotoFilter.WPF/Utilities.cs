@@ -13,10 +13,16 @@ namespace PhotoFilter.WPF
         static string PhotoPathForUser = @"\Pictures";
         public static string[] ValidFileExtensions = new string[] { "jpg", "png" };
 
+        
         public static string[] GetPictureList()
         {
+            /*  Please uncomment and move on to the next task
             return Directory.GetFiles(PhotoPath);
+            */
         }
+
+
+
 
         public static bool IsValidImageFile(string file)
         {
@@ -40,6 +46,8 @@ namespace PhotoFilter.WPF
             }
             return false;
         }
+      
+
 
         #region PrivateAPIs
         static string CurrentUser

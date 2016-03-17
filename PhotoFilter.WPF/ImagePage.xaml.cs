@@ -151,7 +151,6 @@ namespace PhotoFilter.WPF
 
         private byte[] ApplyAntiqueFilter(byte[] buffer)
         {
-            /* Please remove comment and move on
             var pixels = new byte[buffer.Length];
 
             for (int x = 0; x < buffer.Length; x += 4)
@@ -176,7 +175,6 @@ namespace PhotoFilter.WPF
                 }
             }
             return pixels;
-        */
         }
 
         private byte[] ApplyAntiqueFilterParallel(byte[] buffer)

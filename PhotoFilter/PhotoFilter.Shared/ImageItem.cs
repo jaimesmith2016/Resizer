@@ -103,11 +103,11 @@ namespace PhotoFilter
         
         public async Task LoadImageFromDisk()
         {
-            /* Please uncomment and move on to the next task
+           //  Please uncomment and move on to the next task
             m_thumbNail = await m_file.GetThumbnailAsync(ThumbnailMode.PicturesView);
             m_photo = new BitmapImage();
             m_photo.SetSource(m_thumbNail);
-            */
+            
         }
         
 

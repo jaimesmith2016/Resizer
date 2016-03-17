@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22609.0
+VisualStudioVersion = 14.0.25110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoFilter.Universal", "PhotoFilter.Universal", "{551F24E6-5D0B-4C80-985F-7CFD04928161}"
 EndProject
@@ -18,6 +18,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotoFilterLib.Win32", "PhotoFilterLib.Win32\PhotoFilterLib.Win32.vcxproj", "{5591BD71-ABBE-4356-A0FC-1DF99129E700}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotoFilterLib.WinRT", "PhotoFilterLib.WinRT\PhotoFilterLib.WinRT.vcxproj", "{32CED1A3-79EB-4A96-8A33-FFA0833670A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6A72A40D-E231-40D4-AF1B-F69BBED4E924}"
+	ProjectSection(SolutionItems) = preProject
+		InitialTests.cs = InitialTests.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
